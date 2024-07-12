@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>환율계산기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title">환율 계산기</div>
+    <div class="exchange_box">
+        <div class="dropdown">
+            <button class="dropbtn" id="from_button">USD</button>
+            <div class="dropdown-content" id="from_currency_list">
+                <a href="#">KRW</a>
+                <a href="#">USD</a>
+                <a href="#">JPN</a>
+            </div>
+        </div>
+        <div class="input_area">
+            <input type="number" id="from_input" onkeyup="convert()" placeholder="금액을 입력하세요">
+            <p id="from_currency_unit">USD</p>
+        </div>
+    </div>
+
+    <h2>=</h2>
+
+    <div class="exchange_box">
+        <div class="dropdown">
+            <button class="dropbtn" id="to_button">KRW</button>
+            <div class="dropdown-content" id="to_currency_list">
+                <a href="#">KRW</a>
+                <a href="#">USD</a>
+                <a href="#">JPN</a>
+            </div>
+        </div>
+        <div class="input_area">
+            <input type="number" id="to_input" onkeyup="reConvert()">
+            <p id="to_currency_unit">KRW</p>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
