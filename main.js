@@ -4,23 +4,23 @@ let currencyRatio = {
     USD: {
         USD: 1,
         KRW: 1379.21,
-        JPN: 159.15,
+        JPY: 159.15,
         unit: '달러',
     },
     KRW: {
         USD: 0.00073,
         KRW: 1,
-        JPN: 0.12,
+        JPY: 0.12,
         unit: '원',
     },
-    JPN: {
+    JPY: {
         USD: 0.0063,
         KRW: 8.66,
-        JPN: 1,
+        JPY: 1,
         unit: '엔',
     },
 }
-//currencyRatio.JPN.unit;
+//currencyRatio.JPY.unit;
 //currencyRatio['USD']['unit']
 let fromCurrency = 'USD';
 let toCurrency = 'KRW';
